@@ -1,0 +1,276 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>SUNRISE</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"href="css/bootstrap.css">
+<link rel="stylesheet"href="font awesome/font-awesome.min.css"> 
+	<script src="js/jquery.js.js"></script>       
+    <script src="js/bootstrap.js"></script>
+    <!-- akhir dari Bagian js -->
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+        ); 
+    });
+    </script>
+   
+</head>
+<body>
+
+
+<!--navbar-->
+<style>
+.navbar {
+    margin-bottom: 0;
+    background-color: #dcf5f9;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.6;
+}
+
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #f1642e !important;
+	font-family:BigNoodleTitling;
+	font-size:15px
+}
+
+.navbar-nav li a:hover {
+    color:#000000 !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color:#CCCCCC; !important;
+}
+</style>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+     	<a class="navbar-brand" href="index.html"><img src="img/logo.png" style="margin-top:-14px;"></a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="menu.html">MENU</a></li>
+<li><a href="promo.html">PROMO</a></li>
+<li><a href="index.html#about">ABOUT</a></li>
+<li><a href="index.html#contact">CONTACT</a></li>
+<li class="clr4 dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown">LOGIN<span class="caret"></span></a>
+<ul class="dropdown-menu" style="padding: 20px 15px 5px 10px; width:270px;">
+		<li>
+			<form action="login.php" method="POST">
+            	<div class="input-group" style="margin-bottom:5px;">
+     			<span class="input-group-addon">
+                <span class="glyphicon glyphicon-user"></span>
+                </span>
+      			<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby=	"inputGroupSuccess3Status"  placeholder="Username">
+			</div>
+								
+            <div class="input-group">
+      			<span class="input-group-addon">
+                <span class="glyphicon glyphicon-barcode"></span>
+                </span>
+      			<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status"  placeholder="Password">
+    		</div>
+									
+            <div class="checkbox">
+				<label><input type="checkbox"> Remember me</label>
+			</div>
+				<tr><td colspan="2" align="center"><button type="button" class="btn btn-success">Login</button>  <button type="button" class="btn btn-info">Sign Up</button></td></tr>
+			</form>
+		</li>
+        </li>
+</ul>
+	</div>
+  </div>
+</nav>
+<!--end of navbar-->
+
+
+
+<!--- detail --->
+<div id="contact" class="dark-bg" style="margin-top:110px;">
+	<div class="container" >
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<center><h2 style="margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">DETAIL FOOD</h2></center> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="img/big.jpg" style="width:80%;height:80%;margin-left:30px;"/>
+			</div>
+			<div class="col-md-6" style="margin-top:40px;">
+				<div class="section-text">
+					<h4 style="font-size:21px;">Shrirmp Ring</h4>
+						<p>IDR 13,000</p>
+                        <p>Made with finest shrimp combinate with green groceries and best ingredients for your best lunch menu,this one is the best choice for your helthy life</p>
+                        <p style="color:#00FF00;font-size:18px;">Availabelity : Available</p>
+                        
+						<fieldset class="form-group col-md-4" style="margin-left:-15px;">
+                        <label for="exampleselect1">QTY</label>
+                        <select class="form-control" id="exampleselect1"> 
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        </select>
+                        </fieldset>
+                        
+                        <fieldset class="form-group col-md-4" style="margin-left:-15px;">
+                        <label for="exampleselect1">Send As</label>
+                        <select class="form-control" id="exampleselect1"> 
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                        </select>
+                        </fieldset>
+				</div>
+			</div>
+			<div class="buttons col-md-4">
+            	<button type="button" class="btn btn-success btn-lg" ><a href="must.html" style="color:#FFFFFF;text-decoration:none;">Add To Charts</a></button>
+        </div>
+
+	</div>
+</div>
+</div>        
+
+<!--- end of detail --->
+
+
+
+
+
+
+
+
+<!---footer--->
+<style>
+.foot {
+background:url(img/head2.jpg);
+margin-top:120px;
+}
+.col-md-3 li {
+list-style-type:none;
+}
+
+.col-md-3 li a {
+text-decoration:none;
+color:#CCCCCC;
+font-family:BigNoodleTitling;
+}
+.col-md-3 li a:hover {
+color:#FFFFFF;
+
+}	
+
+.col-md-4 li {
+	display:inline;
+}
+
+.col-md-4 li img {
+	width:10%;
+	}
+.col-md-4 li :hover{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity:0.5;
+  opacity:0.5;
+	}
+
+.footer{
+	
+	margin-bottom:0px;
+	float:center;
+
+}
+.footer p {
+	font:12px arial;
+	margin-bottom:0px;
+	color:#CCCCCC;
+}
+.footer p a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.footer p a:hover{
+	color:#99FFFF;
+}
+</style>
+<div class="foot">
+
+		<div class="container">
+        	<div class="row">
+			<div class="col-md-3" style="margin-top:45px;margin-bottom:45px;">
+					<h4 style="font-family:BigNoodleTitling;font-size:21px;color:#FFFFFF;">Other Menu</h4>
+						<li><a href="confirm.html">Payment Confirmation</a></li>
+                        <li><a href="">F.A.Q</a></li>
+                        <li><a href="">Terms & Cond</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Career</a></li>
+			</div>
+			<div class="col-md-4 " style="margin-top:45px;margin-bottom:45;">
+					<h4 style="font-family:BigNoodleTitling;font-size:21px;color:#FFFFFF;">Our Social Media</h4>
+						<ul>
+        			<li style="margin-left:-40px;"><a href=""><img src="img/png/tw copy1.png"</a></li>
+           	 		<li><a href=""><img src="img/png/tw copy.png"</a></li>
+            		<li><a href=""><img src="img/png/ig copy.png"</a></li>
+           		</ul>
+			</div>
+							</div>
+  		</div>
+    
+	
+  		<div class="footer">
+			<center><p>©Copyright by <a > SUNRISE </a>2016. Powered by SNDY. </p></center> 
+  		</div>
+		</div>
+
+</div>
+<!---end footer---> 
+
+</body> 
+</html>

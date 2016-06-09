@@ -1,0 +1,674 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>SUNRISE</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"href="css/bootstrap.css">
+<link rel="stylesheet"href="font awesome/font-awesome.min.css"> 
+	<script src="js/jquery.js.js"></script>       
+    <script src="js/bootstrap.js"></script>
+    <!-- akhir dari Bagian js -->
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+        ); 
+    });
+    </script>
+   
+</head>
+<body>
+
+
+<!--navbar-->
+<style>
+.navbar {
+    margin-bottom: 0;
+    background-color: #dcf5f9;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.6;
+}
+
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #f1642e !important;
+	font-family:BigNoodleTitling;
+	font-size:15px
+}
+
+.navbar-nav li a:hover {
+    color:#000000 !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color:#CCCCCC; !important;
+}
+</style>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+     	<a class="navbar-brand" href="#jumbotron"><img src="img/logo.png" style="margin-top:-14px;"></a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" >
+      	<li><a href="#menu">MENU</a></li>
+<li><a href="#promo">PROMO</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#contact">CONTACT</a></li>
+<li class="clr4 dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown">LOGIN<span class="caret"></span></a>
+<ul class="dropdown-menu" style="padding: 20px 15px 5px 10px; width:270px;">
+		<li>
+			<form action="login.php" method="POST">
+           		 <div class="input-group" style="margin-bottom:5px;">
+     			<span class="input-group-addon">
+                <span class="glyphicon glyphicon-user"></span>
+                </span>
+      			<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby=	"inputGroupSuccess3Status"  placeholder="Username">
+			</div>
+								
+            <div class="input-group">
+      			<span class="input-group-addon">
+                	<span class="glyphicon glyphicon-barcode"></span>
+                </span>
+      			<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status"  placeholder="Password">
+    		</div>
+									
+            <div class="checkbox">
+				<label><input type="checkbox"> Remember me</label>
+			</div>
+				<tr><td colspan="2" align="center"><button type="button" class="btn btn-success">Login</button>  <button type="button" class="btn btn-info">Sign Up</button></td></tr>
+			</form>
+		</li>
+        </li>
+      </ul>
+	</div>
+  </div>
+</nav>
+<!--end of navbar-->
+
+
+
+<!--jumbtroon-->
+<style>
+.jumbotron {
+	background:url(img/head.jpg);
+	height:800px;
+	width:auto;
+	color:#FFFFFF;
+}
+</style>
+
+<div id="jumbotron">
+	<div class="jumbotron text-center">
+    <div class="container">
+    <div class="col-md-6">
+		<h1 style="font-size:14px;backround:img/ny.jpg;margin-top:230px;font-family:arial;font-size:60px;color:#2fbc5c;margin-top:240px;"> TOO BUSY TO SERVE LUNCH MENU ?</h1>
+        <button type="button" class="btn btn-success btn-lg"><a href="#contact" style="color:#FFFFFF;text-decoration:none;">Hit Us</a></button>
+	</div>
+    </div>
+    </div>
+</div>
+<!--end of jumbtroon-->
+
+
+<!--SERVE-->
+
+<div class="container text-center">
+  <h2 style="margin-top:75px;margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">THINGS WE COULD SERVE FOR YOU</h2>
+  	<br>
+  		<div class="col-md-12" >
+    		<div class="col-md-3">
+      			<img src="img/png/fish.png" style="color:#009900;font-size:150px;"/>
+      			<h4>DISH</h4>
+      			<p>We serve best ingredients </p>
+      			<p>for your lunch menu</p>
+    	</div>
+        
+    		<div class="col-md-3">
+      			<img src="img/png/groceries.png"/>
+      			<h4>GROCERIES</h4>
+      			<p>We serve best groceries</p>
+      			<p>to complete your </p>
+      			<p>lunch menu</p>
+    		</div>
+            
+    		<div class="col-md-3">
+      			<IMG src="img/png/bread.png"/>
+      			<h4>BREAD</h4>
+      			<p>We serve best bread</p>
+      			<p>to complete your </p>
+       			<p>lunch menu</p>
+    		</div>
+    
+    		<div class="col-md-3">
+      			<IMG src="img/png/juice.png"/>
+      			<h4>JUICE</h4>
+      			<p>We serve best juice</p>
+      			<p>to complete your </p>
+       			<p>lunch menu</p>
+    		</div>
+  </div>
+</div>
+<!--end of SERVE-->
+
+
+<hr style="margin-top:150px;margin-bottom:150px;width:75%;">
+
+
+<!--MENU page-->
+<style>     
+    .thumbnail {
+        position:relative;
+        overflow:hidden;
+    }
+     
+    .caption {
+        position:absolute;
+        top:0;
+        right:0;
+        background:rgba(90, 90, 90, 0.75);
+        width:100%;
+        height:100%;
+        padding:2%;
+        display: none;
+        text-align: center;
+        color:#fff !important;
+        z-index:2;
+    }
+    
+</style> 
+    
+<div id="menu">
+	<div class="container"  > 
+		<center><h2 style="margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">MENU</h2></center> 
+    	<div class="row">
+        
+        	<div class="col-md-4">
+            	<div class="thumbnail">
+                	<div class="caption">
+                    	<h4 class="">CHICKEN BLACK PAPPER</h4>
+                    	<p class="">Made with finest chicken combinate with</p>
+                    	<p> black papper and best ingredients</p>
+                    	<p>for best indonesian taste</p>
+                    	<p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                   		 </p>
+                	</div>
+                		<img src="img/Untitled-1.jpg" style="width:350px;height:290px;" alt="..." class="img-responsive">
+            	</div>
+        	</div>
+            <div class="col-md-4">
+              	<div class="thumbnail">
+               		 <div class="caption">
+                        <h4 class="">Shrirmp Ring</h4>
+                    	<p class="">Made with finest shrimp combinate with</p>
+                    	<p> green groceries and best ingredients</p>
+                    	<p>for your best lunch menu</p>
+                    	<p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                    	</p>
+                	</div>
+                		<img src="img/2.jpg" style="width:350px;height:290px;" alt="..." class="">
+            	</div>
+        	</div>
+        	<div class="col-md-4">
+            	<div class="thumbnail">
+                	<div class="caption">
+                     	<h4 class="">Green Sliced Food</h4>
+                   		<p class="">Made with finest vegetables combinate with</p>
+                    	<p>best indonesian ingredients</p>
+                    	<p>for best daily menu</p>
+                    	<p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                    	</p>
+                	</div>
+                		<img src="img/3.jpg" style="width:350px;height:290px;" alt="..." class="">
+            	</div>
+        	</div>
+        	<div class="col-md-4">
+            	<div class="thumbnail">
+                	<div class="caption">
+                    	<h4 class="">Green Shrimp</h4>
+                    	<p class="">Made with finest shrimp combinate with</p>
+                    	<p> green groceries and best ingredients</p>
+                    	<p>for your best daily menu</p>
+                    	<p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                    	</p>
+                	</div>
+                		<img src="img/4.jpg" style="width:350px;height:290px;" alt="..." class="">
+            	</div>
+        	</div>  
+        	<div class="col-md-4">
+            	<div class="thumbnail">
+                	<div class="caption">
+                    	<h4 class="">Green Orak-Arik</h4>
+                        <p class="">Made with finest vegetables combinate with</p>
+                        <p>best indonesian ingredients</p>
+                        <p>for best daily menu</p>
+                        <p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                    	</p>
+                	</div>
+                		<img src="img/3.jpg" style="width:350px;height:290px;" alt="..." class="">
+            	</div>
+        	</div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                         <h4 class="">Chicken Black</h4>
+                        <p class="">Made with finest chicken combinate with</p>
+                        <p> black papper and best ingredients</p>
+                        <p>for best indonesian taste</p>
+                        <p class="">
+                    		<a href="detail2.html" class="label label-success" rel="tooltip" >Order Now</a>
+                    	</p>
+                	</div>
+                		<img src="img/Untitled-1.jpg" style="width:350px;height:290px;" alt="..." class="">
+            	</div>
+        	</div>
+        </div>
+        <div class="buttons" >
+            <center>
+            	<button type="button" class="btn btn-success btn-lg" style="margin-top:80px;"><a href="menu.html" style="color:#FFFFFF;text-decoration:none;">More</a></button>
+            </center>
+        </div>
+    </div>  
+    <!--end of MENU-->
+    
+<hr style="margin-top:150px;margin-bottom:150px;width:75%;">
+
+<!--PROMO page-->
+<style>
+	.thumbnail{
+         position:relative;
+        overflow:hidden;
+    }
+     
+    .caption {
+        position:absolute;
+        top:0;
+        right:0;
+        background:rgba(90, 90, 90, 0.75);
+        width:100%;
+        height:100%;
+        padding:2%;
+        display: none;
+        text-align: center;
+        color:#fff !important;
+        z-index:2;
+    }
+    
+</style> 
+
+<div id="promo">
+    <div class="container"   > 
+    	<center><h2 style="margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">PROMO THIS WEEK</h2></center> 
+            <div class="row">
+            
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">CHICKEN BLACK PAPPER</h4>
+                                <p class="">Made with finest chicken combinate with</p>
+                                <p> black papper and best ingredients</p>
+                                <p>for best indonesian taste</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                       </div>
+                			<img src="img/promo1.jpg" style="width:350px;height:240px;" alt="..." class="img-responsive">
+            		</div>
+        		</div>
+        		<div class="col-md-3">
+            		<div class="thumbnail">
+                        <div class="caption">
+                            <h4 class="">Shrirmp Ring</h4>
+                                <p class="">Made with finest shrimp combinate with</p>
+                                <p> green groceries and best ingredients</p>
+                                <p>for your best lunch menu</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                        </div>
+                            <img src="img/promo2.jpg" style="width:350px;height:240px;" alt="..." class="">
+                    </div>
+        		</div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">Green Sliced Food</h4>
+                                <p class="">Made with finest vegetables combinate with</p>
+                                <p>best indonesian ingredients</p>
+                                <p>for best daily menu</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                		</div>
+                			<img src="img/promo3.jpg" style="width:350px;height:240px;" alt="..." class="">
+            		</div>
+        		</div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                    		<h4 class="">Green Shrimp</h4>
+                                <p class="">Made with finest shrimp combinate with</p>
+                                <p> green groceries and best ingredients</p>
+                                <p>for your best daily menu</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                		</div>
+                			<img src="img/promo4.jpg" style="width:350px;height:240px;" alt="..." class="">
+            		</div>
+        		</div>  
+
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">Green Orak-Arik</h4>
+                                <p class="">Made with finest vegetables combinate with</p>
+                                <p>best indonesian ingredients</p>
+                                <p>for best daily menu</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                        </div>
+                        	<img src="img/promo5.jpg" style="width:350px;height:240px;" alt="..." class="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">Chicken Black</h4>
+                                <p class="">Made with finest chicken combinate with</p>
+                                <p> black papper and best ingredients</p>
+                                <p>for best indonesian taste</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                        </div>
+                        	<img src="img/promo6.jpg" style="width:350px;height:240px;" alt="..." class="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">Chicken Black</h4>        
+                                <p class="">Made with finest chicken combinate with</p>
+                                <p> black papper and best ingredients</p>
+                                <p>for best indonesian taste</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                        </div>
+                        	<img src="img/promo7.jpg" style="width:350px;height:240px;" alt="..." class="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                             <h4 class="">Chicken Black Satay</h4>
+                                <p class="">Made with finest chicken combinate with</p>
+                                <p> black papper and best ingredients</p>
+                                <p>for best indonesian satay taste</p>
+                                <p class="">
+                                    <a href="detail.html" class="label label-success" rel="tooltip" >Order Now</a>
+                                </p>
+                        </div>
+                        	<img src="img/promo8.jpg" style="width:350px;height:240px;" alt="..." class="">
+                    </div>
+                </div>
+           
+        	<div class="buttons" >
+            <center>
+            	<button type="button" class="btn btn-success btn-lg" style="margin-top:80px;"><a href="promo.html" style="color:#FFFFFF;text-decoration:none;">More</a></button>
+            </center>
+        </div>
+    	
+        </div>
+     </div>
+</div>
+       <!--end of PROMO-->
+       
+    
+ <hr style="margin-top:150px;margin-bottom:150px;width:75%;">  
+
+   
+   <!--ABOUT-->
+<section id="about" class="dark-bg">
+	<div class="container" >
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<center><h2 style="margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">ABOUT US</h2></center> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="img/logos.jpg" style="width:270px;height:270px;"/>
+			</div>
+			<div class="col-md-8" style="margin-top:40px;">
+				<div class="section-text">
+                    <p style="font-family:academyM54;font-size:20px;">HELLO !</p>
+					<p>We are small healthy catering based in small town called Klaten.High quality and reasonable price  </p>
+					<p>is our selling point.We serve best healthy food combine with finest quality ingredients</p>
+					<p>For your daily menu's</p>
+				</div>
+			</div>
+         </div>
+     </div>
+</section>   
+    <!--end of ABOUT-->
+    
+
+<hr style="margin-top:150px;margin-bottom:150px;width:75%;">
+
+
+<!--CONTACT US-->
+<div id="contact" class="dark-bg">
+	<div class="container" >
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<center><h2 style="margin-bottom:65px;font-size:30px;font-family:BigNoodleTitling;color:#f1642e;">CONTACT US</h2></center> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="img/call.png" style="width:95%;height:95%;"/>
+			</div>
+			<div class="col-md-3" style="margin-top:40px;">
+				<div class="section-text">
+					<h4 style="font-family:opificio;font-size:21px;">Our Business Office</h4>
+						<p>Perum Griya Taman Srago Blok A12 No.14 Klaten</p>
+						<p><span class="glyphicon glyphicon-phone-alt"></i> 082 226 620 365</p>
+				</div>
+			</div>
+			<div class="col-md-6" style="margin-top:50px;">
+				<form name="sentMessage" id="contactForm" novalidate="">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group has-success has-feedback">
+   								<div class="input-group">
+     								<span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    </span>
+     								<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby=			"inputGroupSuccess3Status"  placeholder="Your Name">
+    							</div>
+                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+   									 <span id="name" class="sr-only">(success)</span>
+										<p class="help-block text-danger"></p>
+								 </div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group has-success has-feedback">   
+   									 <div class="input-group">
+     								 	<span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-inbox"></span>
+                                        </span>
+      									<input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status"  placeholder="Your Email">
+   									 </div>
+                                     	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+   									 	<span id="name" class="sr-only">(success)</span>
+										<p class="help-block text-danger"></p>
+								  	</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+								  	<div class="form-group has-success has-feedback">
+                                 		<div class="input-group">
+      										<span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-question-sign"></span>
+                                        </span>
+      							<textarea class="form-control" rows="4"  placeholder="Your Message" ></textarea>
+    									</div>
+                                			<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    										<span id="name" class="sr-only">(success)</span>
+											<p class="help-block text-danger"></p>
+								  	</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+								  <button type="button" class="btn btn-success" style="float:left;">Send</button>
+								</div>
+							</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>        
+<!---end CONTACT US--->       
+
+
+<hr style="margin-top:150px;margin-bottom:150px;width:75%;">
+
+
+<!---footer--->
+<style>
+.foot {
+background:url(img/head2.jpg);
+}
+.col-md-3 li {
+list-style-type:none;
+}
+
+.col-md-3 li a {
+text-decoration:none;
+color:#CCCCCC;
+font-family:BigNoodleTitling;
+}
+.col-md-3 li a:hover {
+color:#FFFFFF;
+
+}	
+
+.col-md-4 li {
+	display:inline;
+}
+
+.col-md-4 li img {
+	width:10%;
+	}
+.col-md-4 li :hover{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity:0.5;
+  opacity:0.5;
+	}
+
+.footer{
+	
+	margin-bottom:0px;
+	float:center;
+
+}
+.footer p {
+	font:12px arial;
+	margin-bottom:0px;
+	color:#CCCCCC;
+}
+.footer p a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.footer p a:hover{
+	color:#99FFFF;
+}
+</style>
+<div class="foot">
+
+		<div class="container">
+        	<div class="row">
+			<div class="col-md-3" style="margin-top:45px;margin-bottom:45px;">
+					<h4 style="font-family:BigNoodleTitling;font-size:21px;color:#FFFFFF;">Other Menu</h4>
+						<li><a href="confirm.html">Payment Confirmation</a></li>
+                        <li><a href="">F.A.Q</a></li>
+                        <li><a href="">Terms & Cond</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Career</a></li>
+			</div>
+			<div class="col-md-4 " style="margin-top:45px;margin-bottom:45;">
+					<h4 style="font-family:BigNoodleTitling;font-size:21px;color:#FFFFFF;">Our Social Media</h4>
+						<ul>
+        			<li style="margin-left:-40px;"><a href=""><img src="img/png/tw copy1.png"</a></li>
+           	 		<li><a href=""><img src="img/png/tw copy.png"</a></li>
+            		<li><a href=""><img src="img/png/ig copy.png"</a></li>
+           		</ul>
+			</div>
+							</div>
+  		</div>
+    
+	
+  		<div class="footer">
+			<center><p>©Copyright by <a > SUNRISE </a>2016. Powered by SNDY. </p></center> 
+  		</div>
+		</div>
+
+</div>
+<!---end footer---> 
+
+</body> 
+</html>
